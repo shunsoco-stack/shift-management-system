@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">シフト管理システム 専用アイコン</title>
+  <desc id="desc">カレンダー、人、時計を組み合わせたアイコン</desc>
+  <defs>
+    <linearGradient id="bg" x1="72" y1="48" x2="450" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c9484"/><stop offset="1" stop-color="#05675d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#053c36" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
+  <path d="M74 360c74 58 291 80 383-79v103c0 42-31 74-74 74H128c-42 0-74-32-74-74v-49c6 9 12 17 20 25Z" fill="#044f48" opacity=".2"/>
+  <g filter="url(#shadow)">
+    <rect x="88" y="105" width="336" height="310" rx="60" fill="#fff"/>
+    <path d="M88 185h336" stroke="#d8efeb" stroke-width="28"/>
+    <path d="M162 80v55M350 80v55" stroke="#fff" stroke-width="32" stroke-linecap="round"/>
+    <path d="M162 83v49M350 83v49" stroke="#d8efeb" stroke-width="13" stroke-linecap="round"/>
+  </g>
+  <g fill="#087d70">
+    <circle cx="216" cy="268" r="40"/>
+    <path d="M138 372c5-64 33-98 78-98s73 34 78 98H138Z"/>
+    <circle cx="142" cy="294" r="29" opacity=".72"/>
+    <path d="M96 370c3-44 19-69 48-72 22 10 36 34 39 72H96Z" opacity=".72"/>
+  </g>
+  <g>
+    <circle cx="357" cy="337" r="91" fill="#f5b544" stroke="#fff" stroke-width="20"/>
+    <circle cx="357" cy="337" r="67" fill="#ffd77c"/>
+    <path d="M357 292v47l34 20" fill="none" stroke="#15312c" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="357" cy="337" r="9" fill="#15312c"/>
+  </g>
+</svg>
