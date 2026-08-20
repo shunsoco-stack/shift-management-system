@@ -386,6 +386,6 @@ npm run build
 - [ ] Backend接続とLocal fallbackの両方を確認した
 - [ ] localStorage復元と壊れた保存値からの回復を確認した
 - [ ] Console error、Hydration warning、Network 404がない
-- [ ] 公開URLを実際に開いた、または`公開後更新`のまま誤ったCTAを出していない
-- [ ] GitHub URLが作品専用repository、または`公開後更新`のまま誤ったremoteを掲載していない
+- [x] 公開URLの`/`と`/demo`が200で、作品名を返すことを確認した
+- [x] GitHub URLが作品専用repositoryであることを確認した
 - [ ] 採用スクリーンショットが実アプリから撮影され、架空データだけを含む

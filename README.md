@@ -5,8 +5,8 @@
 - 作品カテゴリ: **業務システム**
 - サブカテゴリ: **シフト・人員配置**
 - 登録不要Demo: `/demo`
-- 公開URL: `公開後更新`
-- GitHub URL: `公開後更新`
+- 公開URL: [shift-management-system.kinjo653222.chatgpt.site](https://shift-management-system.kinjo653222.chatgpt.site)
+- GitHub URL: [shunsoco-stack/shift-management-system](https://github.com/shunsoco-stack/shift-management-system)
 
 > [!IMPORTANT]
 > Conflictは勤務条件との不一致候補を見つけるための支援情報です。本システムは法令準拠を完全に保証するものではなく、店舗ルール、雇用契約、実際の勤務状況を踏まえた管理者の確認が必要です。
@@ -272,7 +272,7 @@ D1取得は`cloudflare:workers`のruntime envを使います。API確認はCloud
 
 | Link | Status |
 | --- | --- |
-| 公開URL | `公開後更新` |
-| GitHub URL | `公開後更新` |
+| 公開URL | [shift-management-system.kinjo653222.chatgpt.site](https://shift-management-system.kinjo653222.chatgpt.site) |
+| GitHub URL | [shunsoco-stack/shift-management-system](https://github.com/shunsoco-stack/shift-management-system) |
 
 架空URL、`#`、既存repositoryの無関係なremoteは掲載しません。ポートフォリオ掲載用のコピー、画像候補、完全版プロンプトは[`docs/PORTFOLIO.md`](docs/PORTFOLIO.md)を参照してください。

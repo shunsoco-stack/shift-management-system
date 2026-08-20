@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "希望提出・必要人数・勤務制約・自動配置・Conflict確認・確定・公開を一体化したシフト管理システム",
+  "homepage": "https://shift-management-system.kinjo653222.chatgpt.site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shunsoco-stack/shift-management-system.git"
+  },
   "engines": {
     "node": ">=22.13.0"
   },

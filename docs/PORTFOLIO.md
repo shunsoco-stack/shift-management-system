@@ -11,9 +11,9 @@
 | package.json | 作品固有名、Node要件、lint / typecheck / test / build scriptを確認 |
 | 専用アイコン | `public/brand/shift-management-system-icon.svg`と`public/favicon.svg`を確認 |
 | OG画像 | `public/og.png`を確認 |
-| 公開URL | `公開後更新` |
-| GitHub URL | `公開後更新`。親repositoryの既存remoteは別作品を指すため流用禁止 |
-| 実スクリーンショット | `公開後更新`。完成アプリから撮影し、存在確認後にだけ作品データへ登録 |
+| 公開URL | [https://shift-management-system.kinjo653222.chatgpt.site](https://shift-management-system.kinjo653222.chatgpt.site)（`/`、`/demo`、D1 APIの本番応答を確認済み） |
+| GitHub URL | [https://github.com/shunsoco-stack/shift-management-system](https://github.com/shunsoco-stack/shift-management-system) |
+| 実スクリーンショット | 未作成。下記6候補から完成アプリを撮影し、存在確認後にだけ作品データへ登録 |
 
 ## 掲載メタデータ
 
@@ -24,8 +24,8 @@
 - 種別: 操作可能なWeb業務システムDemo
 - メイン画像第一候補: **シフト表 + 人員不足**
 - 専用アイコン: **Calendar + People + Clock**
-- Live Demo: `公開後更新`
-- Source Code: `公開後更新`
+- Live Demo: [https://shift-management-system.kinjo653222.chatgpt.site](https://shift-management-system.kinjo653222.chatgpt.site)
+- Source Code: [https://github.com/shunsoco-stack/shift-management-system](https://github.com/shunsoco-stack/shift-management-system)
 
 ### タグライン
 
@@ -169,8 +169,8 @@
 - サブカテゴリ: シフト・人員配置
 - タグライン: 希望から公開まで、迷わないシフト作成。
 - 種別: 操作可能なWeb業務システムDemo
-- Live Demo URL: 公開後更新
-- GitHub URL: 公開後更新
+- Live Demo URL: https://shift-management-system.kinjo653222.chatgpt.site
+- GitHub URL: https://github.com/shunsoco-stack/shift-management-system
 - 専用アイコン: shift-management-system/public/brand/shift-management-system-icon.svg
 - Favicon: shift-management-system/public/favicon.svg
 - メイン画像第一候補: シフト表 + 人員不足
@@ -288,7 +288,7 @@ Designは追加先のcomponent、typography、spacing、color、radius、shadow�
 
 追加先でも既存scriptに従ってlint、typecheck、test、buildを実行してください。Desktop 1440px、Tablet、Mobile 390pxと320px、Keyboard、Reduced Motion、外部link、画像404、console errorを確認してください。
 
-公開URLとGitHub URLは現在「公開後更新」です。掲載作業時に実在URLを確認できた場合だけ設定し、HTTP status、作品名、遷移先を確認してください。未確定ならCTAを非表示または準備中にし、未設定と完了報告してください。
+公開URLとGitHub URLは上記の実在URLを使用し、掲載作業時にもHTTP status、作品名、repository名、遷移先を再確認してください。到達できない場合は古いURLへ差し替えず、CTAを一時非表示にして未設定と報告してください。
 
 最後に、変更file、追加した作品data / category / subcategory、再利用component、採用copy、iconと画像path、Live / GitHub URL状態、検証command結果、Responsive / Keyboard / Reduced Motion結果、Known Limitationsを報告してください。
 ```
