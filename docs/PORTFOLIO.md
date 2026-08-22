@@ -13,7 +13,7 @@
 | OG画像 | `public/og.png`を確認 |
 | 公開URL | [https://shift-management-system.kinjo653222.chatgpt.site](https://shift-management-system.kinjo653222.chatgpt.site)（`/`、`/demo`、D1 APIの本番応答を確認済み） |
 | GitHub URL | [https://github.com/shunsoco-stack/shift-management-system](https://github.com/shunsoco-stack/shift-management-system) |
-| 実スクリーンショット | 未作成。下記6候補から完成アプリを撮影し、存在確認後にだけ作品データへ登録 |
+| 実スクリーンショット | 公開アプリからDesktop 6枚、Mobile 1枚を撮影済み。`docs/screenshots/`へ保存 |
 
 ## 掲載メタデータ
 
@@ -122,7 +122,7 @@
 - 休憩は分数で保持し、休憩開始・終了位置はDemo UI / D1割当Recordに持たない
 - メール、Push通知、外部カレンダー同期、給与計算、打刻は未実装
 - Conflictは法令適合を保証せず、管理者の確認が必要
-- 公開URLとGitHub URLは実在確認済み。実スクリーンショットだけは撮影・存在確認後に登録
+- 公開URL、GitHub URL、`docs/screenshots/`の実スクリーンショット7枚を確認済み
 
 ## 専用アイコン
 
@@ -134,18 +134,28 @@
 
 作品名が隣にあり、アイコンが装飾目的の場合は、重複読み上げを避けて空の`alt`または`aria-hidden="true"`を使ってください。
 
-## スクリーンショット候補
+## 実スクリーンショット
 
-すべて完成アプリを実際に表示して撮影します。Mock、合成、未実装機能、ブラウザの個人情報、開発ツール、ローカルpathを含めないでください。
+すべて公開中の完成アプリを実際に表示して撮影済みです。Mock、合成、未実装機能、ブラウザの個人情報、開発ツール、ローカルpathは含みません。
 
 | 優先 | 画像 | 撮影する実装済み状態 | alt | caption |
 | ---: | --- | --- | --- | --- |
 | 1 | シフト表 + 人員不足 | 管理者の週間シフト表。12名の勤務枠と下部の必要 / 割当 / 差が同時に見える | `従業員別の週間シフトと時間帯ごとの必要人数、割当人数、不足を表示する画面` | `希望を割当に変え、必要人数との差を同じ表で確認。` |
-| 2 | 自動シフト案 | 自動作成直後。AUTOラベル、不足・過剰・Conflict、Draft状態が見える | `決定論的アルゴリズムで作成されたDraftシフト案` | `提出済み希望と必要人数から通常コードでDraft案を作成。` |
+| 2 | 週間シフト案 | Draft状態、不足・過剰・Conflict件数、従業員別の勤務枠が見える | `Draft状態の従業員別週間シフト案` | `希望と必要人数を確認しながら勤務枠を調整。` |
 | 3 | Conflict一覧 | 重要 / 確認フィルター、希望休や時間外など複数候補が見える | `希望休、希望時間外、勤務条件のConflict候補を一覧表示する画面` | `自動修正せず、管理者が確認して勤務枠を調整。` |
 | 4 | 希望提出 | 従業員の月間カレンダー、期限警告、日別編集フォームが見える | `出勤可能、希望休、希望時間、備考を入力する月間希望提出画面` | `従業員が月ごとの勤務希望を日別に提出。` |
 | 5 | 管理Dashboard | 提出状況、不足時間、Conflict、確定状況、Workflowが見える | `希望提出、人員不足、Conflict、確定状況を表示する管理Dashboard` | `公開までに必要な判断材料を一画面に集約。` |
 | 6 | Mobile | 390px前後。従業員の公開シフトまたは希望提出と下部navが見える | `スマートフォンで公開済みシフトと下部ナビゲーションを表示した画面` | `従業員は今日・今週・今月の公開シフトをMobileで確認。` |
+
+採用ファイル:
+
+- `docs/screenshots/01-landing.jpg`
+- `docs/screenshots/02-admin-dashboard.jpg`
+- `docs/screenshots/03-shift-table-shortage.jpg`
+- `docs/screenshots/04-staffing-coverage.jpg`（メイン画像第一候補）
+- `docs/screenshots/05-conflict-list.jpg`
+- `docs/screenshots/06-shift-request.jpg`
+- `docs/screenshots/07-mobile-published-shift.jpg`
 
 推奨サイズ:
 
@@ -253,13 +263,13 @@ Draft → Review → Confirmed → Published
 
 専用アイコンはpublic/brand/shift-management-system-icon.svgを既存asset規則に合わせてcopyまたはimportしてください。縦横比と図柄を変更しないでください。作品名が隣にある装飾用途ではaltを空にし、単独表示では「カレンダー、スタッフ、時計を組み合わせたシフト管理システムのアイコン」のような具体的なaltを付けてください。
 
-スクリーンショットは完成アプリから次の6種を撮影し、実在確認後にだけ登録してください。
-1. シフト表 + 人員不足
-2. 自動シフト案
-3. Conflict一覧
-4. 希望提出
-5. 管理Dashboard
-6. Mobile
+スクリーンショットは掲載元repositoryの`docs/screenshots/`にある実在ファイルを使用してください。
+1. シフト表 + 人員不足: `04-staffing-coverage.jpg`
+2. シフト案: `03-shift-table-shortage.jpg`
+3. Conflict一覧: `05-conflict-list.jpg`
+4. 希望提出: `06-shift-request.jpg`
+5. 管理Dashboard: `02-admin-dashboard.jpg`
+6. Mobile: `07-mobile-published-shift.jpg`
 
 第一候補は「シフト表 + 人員不足」です。縦に従業員、横に日付、下部に時間帯別の必要 / 割当 / 差が読める状態を撮影してください。画像には架空Demoデータだけを含め、ブラウザの個人情報、開発ツール、ローカルpath、Error、未実装UIを含めないでください。各画像へ固有alt、width / heightまたはaspect-ratio、responsive sizesを設定してください。
 
@@ -297,7 +307,7 @@ Designは追加先のcomponent、typography、spacing、color、radius、shadow�
 
 - [ ] 公開URLを実際に開き、作品名とDemo Workflowを確認した
 - [ ] GitHub URLがこの作品専用repositoryを指すことを確認した
-- [ ] 6候補から実画面を撮影し、採用fileを記録した
+- [x] 公開アプリから実画面7枚を撮影し、採用fileを記録した
 - [ ] カードのカテゴリが「業務システム」、サブカテゴリが「シフト・人員配置」
 - [ ] 専用SVGが表示され、altまたは装飾扱いが適切
 - [ ] 自動割当をAIと誤記していない

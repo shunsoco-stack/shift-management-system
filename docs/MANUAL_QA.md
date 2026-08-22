@@ -388,4 +388,4 @@ npm run build
 - [ ] Console error、Hydration warning、Network 404がない
 - [x] 公開URLの`/`と`/demo`が200で、作品名を返すことを確認した
 - [x] GitHub URLが作品専用repositoryであることを確認した
-- [ ] 採用スクリーンショットが実アプリから撮影され、架空データだけを含む
+- [x] 採用スクリーンショットが公開アプリから撮影され、架空Demoデータだけを含む

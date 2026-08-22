@@ -11,6 +11,12 @@
 > [!IMPORTANT]
 > Conflictは勤務条件との不一致候補を見つけるための支援情報です。本システムは法令準拠を完全に保証するものではなく、店舗ルール、雇用契約、実際の勤務状況を踏まえた管理者の確認が必要です。
 
+## Screenshots
+
+![従業員別の週間シフトと時間帯ごとの必要人数、割当人数、不足・過剰を表示する画面](docs/screenshots/04-staffing-coverage.jpg)
+
+公開アプリから撮影した管理Dashboard、シフト表、必要人数比較、Conflict一覧、希望提出、Mobile公開シフトは[スクリーンショット一覧](docs/screenshots/README.md)で確認できます。
+
 ## Overview
 
 実装は、すぐ試せるブラウザ内Demoと、Cloudflare D1へ永続化するサーバーAPIの二層で構成しています。
