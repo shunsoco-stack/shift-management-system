@@ -1,4 +1,3 @@
-import { env } from "cloudflare:workers";
 import { drizzle } from "drizzle-orm/d1";
 import * as schema from "./schema";
 
@@ -40,11 +39,30 @@ export class D1BindingError extends Error {
 }
 
 export function getD1Database(): D1DatabaseLike {
-  const candidate = (env as unknown as { DB?: D1DatabaseLike }).DB;
-  if (!candidate || typeof candidate.prepare !== "function") {
-    throw new D1BindingError();
+  // Vercel/Node has no Cloudflare D1 binding. Keep a lazy proxy so API
+  // modules may call this at import time without failing the Next.js build.
+  // The demo UI already falls back to localStorage when these APIs return 503.
+  const candidate = readCloudflareDbBinding();
+  if (candidate && typeof candidate.prepare === "function") {
+    return candidate;
   }
-  return candidate;
+  return new Proxy({} as D1DatabaseLike, {
+    get() {
+      throw new D1BindingError();
+    },
+  });
+}
+
+function readCloudflareDbBinding(): D1DatabaseLike | undefined {
+  try {
+    const requireFn = (0, eval)("typeof require === 'function' ? require : undefined") as
+      | ((id: string) => { env?: { DB?: D1DatabaseLike } })
+      | undefined;
+    const workerEnv = requireFn?.("cloudflare:workers")?.env;
+    return workerEnv?.DB;
+  } catch {
+    return undefined;
+  }
 }
 
 export function getDb() {
